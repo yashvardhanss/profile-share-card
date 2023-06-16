@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/favicon.png">
+  <title>Profile Share Card</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+  <!-- CIRCLES -->
+  <div class="circle1"></div>
+  <div class="circle2"></div>
+
+  <!-- WRAPPER WALA DIV -->
+  <div class="wrapper">
+
+    <!--CARD WALA DIV-->
+    <div class="card">
+
+      <!--1. IMAGE WALA DIV -->
+      <div>
+        <img src="./assets/profile.JPG" alt="user">
+      </div>    <!--IMAGE WALA DIV KHATAM-->
+
+      <!--2. NAME WALA DIV-->
+      <div class="username">
+        <h2>Yash Vardhan Singh</h2>
+      </div>    <!--NAME WALA DIV KHATAM-->
+
+      <!--3. DESIGNATION WALA DIV-->
+      <div class="designation">
+        <h3>Web Development Enthusiast</h3>
+      </div>    <!--DESIGNATION WALA DIV KHATAM-->
+
+      <!--4. BUTTONS-->
+      <div class="button-portion">
+        <!--4.1 BUTTON-1-->
+        <button onclick="openModal()" class="share-btn btn-card">
+          <i class="fa-solid fa-share"></i>
+          <div>Share my profile</div>
+        </button>
+
+        <!--4.2 BUTTON-2-->
+        <button class="follow-btn btn-card">Follow me</button>
+      </div>
+
+    </div>   <!--CARD WALA DIV KHATAM-->
+
+  </div>  <!--WRAPPER WALA DIV KHATAM -->
+
+
+                  <!--MODAL COMPONENT-->
+  
+  <!--MODAL CARD WALA DIV-->                
+  <div class="modal">
+
+    <!--1. MODAL HEADER WALA DIV-->
+    <div class="modal-header">
+      <!--1.1 HEADING-->
+      <h1>Share My Profile</h1>
+
+      <!--1.2 CROSS WALA ICON-->
+      <div>
+        <i onclick="closeModal()" class="fa-solid fa-xmark close-icon"></i>
+      </div>   <!--CROSS ICON WALA DIV KHATAM-->
+
+    </div>    <!--MODAL HEADER WALA DIV KHATAM-->
+
+
+    <!--2. MAIN SHARE WALA DIV-->
+    <div>
+      <!--2.1 HEADING-->
+      <h3>Share this via</h3>
+
+      <!--2.2 ICONS KA CONTAINER WALA DIV-->
+      <div class="icon-container">
+        <!--2.2.1 LINKEDIN ICON-->
+        <a href="http://www.linkedin.com/in/yashvardhanwebtech" class="icon" id="linkedin" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <!--2.2.2 GITHUB ICON-->
+        <a href="https://github.com/yashvardhanss" class="icon" id="github" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+
+        <!--2.2.3 INSTAGRAM ICON-->
+        <a href="https://www.instagram.com/imyashss/" class="icon" id="instagram" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <!--2.2.4 WHATSAPP ICON-->
+        <a href="#" class="icon" id="whatsapp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <!--2.2.5 TELEGRAM ICON-->
+        <a href="https://t.me/yashvardhanss" class="icon" id="telegram" target="_blank">
+          <i class="fa-brands fa-telegram"></i>
+        </a>
+
+      </div>    <!--ICONS KA CONTAINER WALA DIV KHATAM-->
+
+    </div>   <!--MAIN SHARE WALA DIV KHATAM-->
+
+  </div>     <!--MODAL CARD WALA DIV KHATAM--> 
+
+  
+
+                 <!--OVERLAY-->
+  <!--overlay means jab SHARE MY PROFILE pe click krte hai tab jo background ka color change hota hai usko OVERLAY kehte hai -->
+    
+  <div class="overlay" onclick="closeModal()"></div>
+
+  <!--ADDING SCRIPT FOR ICONS-->
+  <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+
+  <!--LINKING JAVASCRIPT FILE-->
+  <script src="script.js"></script>
+   
+</body>
+</html>
